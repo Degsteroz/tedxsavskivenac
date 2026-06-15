@@ -1,12 +1,21 @@
 .logo {
   display: inline-flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 0.125rem;
+  flex-shrink: 0;
   font-family: $font-family-heading;
   font-weight: 900;
-  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-size: clamp(0.8125rem, 3.2vw, 1.125rem);
+  line-height: 0.95;
   letter-spacing: -0.02em;
   transition: opacity $transition-fast;
+
+  @include from-md {
+    flex-direction: row;
+    align-items: baseline;
+    font-size: clamp(0.9375rem, 1.5vw, 1.25rem);
+  }
 
   &:hover {
     opacity: 0.85;
@@ -17,6 +26,6 @@
   color: $color-ted-red;
 }
 
-.name {
+.location {
   color: $color-text;
 }

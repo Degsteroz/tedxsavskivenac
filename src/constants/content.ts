@@ -1,5 +1,11 @@
+import { BRAND } from '@/constants/brand'
+
 export const HERO_CONTENT = {
-  headline: 'WE ARE TEDxSavskiVenac',
+  headline: {
+    eyebrow: 'WE ARE',
+    tedx: BRAND.tedx,
+    location: BRAND.location,
+  },
   manifest: {
     before: 'WHERE LOCAL ',
     highlight1: 'ENERGY SPARKS',
@@ -11,7 +17,8 @@ export const HERO_CONTENT = {
 } as const
 
 export const ABOUT_CONTENT = {
-  title: 'THE THEME: SMALL SHIFTS, BIG IMPACT',
+  title: 'THE THEME:',
+  subtitle: ' SMALL SHIFTS, BIG IMPACT',
   text: "TEDxSavskiVenac is an independent platform in the heart of Belgrade, created to discover and spread ideas capable of changing the world. This year, our theme is 'Small Shifts, Big Impact'. We believe that the most significant changes begin with subtle shifts in thinking, technology, and culture. The event is organized by IT Connect Belgrade, the largest community uniting more than 7,000 professionals.",
 } as const
 

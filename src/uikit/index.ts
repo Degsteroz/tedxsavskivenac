@@ -1,5 +1,6 @@
 export { Button } from './components/Button/Button'
 export { Container } from './components/Container/Container'
+export { GhostLine } from './components/GhostLine/GhostLine'
 export { HeaderNav } from './components/HeaderNav/HeaderNav'
 export type { NavItem } from './components/HeaderNav/HeaderNav'
 export { Highlight } from './components/Highlight/Highlight'

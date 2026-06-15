@@ -12,14 +12,16 @@
 
 .value {
   @include heading-brutal;
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(2.75rem, 18vw, 6rem);
   color: $color-ted-red;
   line-height: 1;
+  overflow-wrap: anywhere;
 }
 
 .label {
-  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-size: clamp(0.875rem, 3.5vw, 1rem);
   color: $color-muted;
   line-height: 1.5;
-  max-width: 16rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }

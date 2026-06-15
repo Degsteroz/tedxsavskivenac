@@ -11,8 +11,8 @@ $font-family-heading: 'Inter', 'Helvetica Neue', 'Arial Black', Arial, sans-seri
 
 // Layout
 $container-max-width: 1200px;
-$container-padding-x: clamp(1.25rem, 4vw, 2.5rem);
-$section-padding-y: clamp(4rem, 12vw, 8rem);
+$container-padding-x: clamp(1rem, 4vw, 2.5rem);
+$section-padding-y: clamp(3rem, 10vw, 8rem);
 
 // Breakpoints
 $bp-sm: 480px;

@@ -1,0 +1,31 @@
+.wrap {
+  position: relative;
+  display: block;
+}
+
+.back,
+.front {
+  display: block;
+}
+
+.back {
+  position: absolute;
+  top: 0.12em;
+  left: 0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba($color-ted-red, 0.35);
+  pointer-events: none;
+  user-select: none;
+}
+
+.front {
+  position: relative;
+}
+
+.accent .front {
+  color: $color-ted-red;
+}
+
+.default .front {
+  color: $color-text;
+}

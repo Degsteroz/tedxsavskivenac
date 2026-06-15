@@ -29,6 +29,7 @@
   max-width: $container-max-width;
   margin-inline: auto;
   padding-inline: $container-padding-x;
+  min-width: 0;
 }
 
 @mixin heading-brutal {
@@ -37,6 +38,8 @@
   line-height: 0.95;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 @mixin section-spacing {

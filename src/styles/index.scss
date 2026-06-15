@@ -13,6 +13,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
 }
 
 body {
@@ -21,24 +23,36 @@ body {
   line-height: 1.6;
   background-color: $color-bg;
   color: $color-text;
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
 }
 
 .app-shell {
   @include vignette-bg;
   position: relative;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 
   > * {
     position: relative;
     z-index: 1;
   }
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 a {

@@ -1,17 +1,22 @@
-import { Button, Container, Highlight, InfoStrip, Section } from '@/uikit'
+import { Button, Container, GhostLine, Highlight, InfoStrip, Section } from '@/uikit'
 import { HERO_CONTENT } from '@/constants/content'
 import { TICKETS_URL } from '@/constants/links'
 import styles from './Hero.module.scss'
 
 export function Hero() {
+  const { eyebrow, tedx, location } = HERO_CONTENT.headline
+
   return (
     <Section className={styles.hero}>
       <Container>
         <div className={styles.headlineWrap}>
-          <h1 className={styles.headlineBack} aria-hidden>
-            {HERO_CONTENT.headline}
+          <h1 className={styles.title}>
+            <span className={styles.eyebrow}>{eyebrow}</span>
+            <span className={styles.brand}>
+              <GhostLine variant="accent">{tedx}</GhostLine>
+              <GhostLine variant="default">{location}</GhostLine>
+            </span>
           </h1>
-          <h1 className={styles.headlineFront}>{HERO_CONTENT.headline}</h1>
         </div>
 
         <p className={styles.manifest}>

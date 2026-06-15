@@ -23,7 +23,7 @@
     position: fixed;
     inset: 0;
     top: 4rem;
-    z-index: 100;
+    z-index: 150;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,8 @@
     background-color: $color-bg;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-1rem);
+    pointer-events: none;
+    transform: translateY(-0.5rem);
     transition:
       opacity $transition-fast,
       visibility $transition-fast,
@@ -42,6 +43,7 @@
     &.open {
       opacity: 1;
       visibility: visible;
+      pointer-events: auto;
       transform: translateY(0);
     }
   }

@@ -6,7 +6,8 @@ export function About() {
   return (
     <Section id="about" className={styles.about}>
       <Container>
-        <SectionTitle>{ABOUT_CONTENT.title}</SectionTitle>
+        <SectionTitle className={`${styles.title} ${styles.red}`}>{ABOUT_CONTENT.title}</SectionTitle>
+        <SectionTitle className={styles.title}>{ABOUT_CONTENT.subtitle}</SectionTitle>
         <Text className={styles.text}>{ABOUT_CONTENT.text}</Text>
       </Container>
     </Section>
