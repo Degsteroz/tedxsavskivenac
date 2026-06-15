@@ -1,0 +1,32 @@
+.strip {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block: 2rem;
+
+  @include from-md {
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  flex-shrink: 0;
+  color: $color-ted-red;
+}
+
+.text {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.5vw, 1.25rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}

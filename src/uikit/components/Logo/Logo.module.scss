@@ -1,0 +1,22 @@
+.logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.125rem;
+  font-family: $font-family-heading;
+  font-weight: 900;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  letter-spacing: -0.02em;
+  transition: opacity $transition-fast;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.tedx {
+  color: $color-ted-red;
+}
+
+.name {
+  color: $color-text;
+}

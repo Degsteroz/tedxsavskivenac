@@ -1,0 +1,88 @@
+@use 'variables' as *;
+
+@mixin from-sm {
+  @media (min-width: $bp-sm) {
+    @content;
+  }
+}
+
+@mixin from-md {
+  @media (min-width: $bp-md) {
+    @content;
+  }
+}
+
+@mixin from-lg {
+  @media (min-width: $bp-lg) {
+    @content;
+  }
+}
+
+@mixin from-xl {
+  @media (min-width: $bp-xl) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin-inline: auto;
+  padding-inline: $container-padding-x;
+}
+
+@mixin heading-brutal {
+  font-family: $font-family-heading;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@mixin section-spacing {
+  padding-block: $section-padding-y;
+}
+
+@mixin section-spacing-compact {
+  padding-block: calc($section-padding-y * 0.6);
+}
+
+@mixin button-invert-hover {
+  transition:
+    background-color $transition-fast,
+    color $transition-fast,
+    border-color $transition-fast;
+
+  &:hover {
+    background-color: $color-text;
+    color: $color-ted-red;
+    border-color: $color-ted-red;
+  }
+}
+
+@mixin vignette-bg {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(ellipse at left center, $color-vignette 0%, transparent 50%),
+      radial-gradient(ellipse at right center, $color-vignette 0%, transparent 50%);
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

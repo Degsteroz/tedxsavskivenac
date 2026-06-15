@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="TEDxSavskiVenac 2026">
+  <rect width="1200" height="630" fill="#000000"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#vignette)"/>
+  <defs>
+    <radialGradient id="vignette" cx="0%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#EB0028" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <text
+    x="80"
+    y="220"
+    font-family="Inter, Helvetica Neue, Arial Black, Arial, sans-serif"
+    font-size="88"
+    font-weight="900"
+    fill="#FFFFFF"
+    letter-spacing="-2"
+  >TEDx<tspan fill="#EB0028">SavskiVenac</tspan></text>
+  <text
+    x="80"
+    y="310"
+    font-family="Inter, Helvetica Neue, Arial, sans-serif"
+    font-size="36"
+    font-weight="700"
+    fill="#FFFFFF"
+    letter-spacing="4"
+  >SMALL SHIFTS, BIG IMPACT</text>
+  <text
+    x="80"
+    y="390"
+    font-family="Inter, Helvetica Neue, Arial, sans-serif"
+    font-size="28"
+    font-weight="500"
+    fill="#888888"
+  >October 10, 2026 · Startit Center, Belgrade</text>
+</svg>

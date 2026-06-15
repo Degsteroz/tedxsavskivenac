@@ -1,0 +1,24 @@
+// Colors
+$color-bg: #000000;
+$color-text: #ffffff;
+$color-ted-red: #eb0028;
+$color-muted: #888888;
+$color-vignette: rgba(235, 0, 40, 0.12);
+
+// Typography
+$font-family-base: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+$font-family-heading: 'Inter', 'Helvetica Neue', 'Arial Black', Arial, sans-serif;
+
+// Layout
+$container-max-width: 1200px;
+$container-padding-x: clamp(1.25rem, 4vw, 2.5rem);
+$section-padding-y: clamp(4rem, 12vw, 8rem);
+
+// Breakpoints
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// Transitions
+$transition-fast: 0.2s ease;

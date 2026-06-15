@@ -1,0 +1,40 @@
+.hero {
+  padding-top: clamp(3rem, 10vw, 6rem);
+}
+
+.headlineWrap {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.headlineBack,
+.headlineFront {
+  @include heading-brutal;
+  font-size: clamp(2.5rem, 12vw, 7rem);
+  line-height: 0.9;
+  margin: 0;
+}
+
+.headlineBack {
+  position: absolute;
+  top: 0.15em;
+  left: 0.08em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba($color-ted-red, 0.35);
+  pointer-events: none;
+  user-select: none;
+}
+
+.headlineFront {
+  position: relative;
+  color: $color-text;
+  transform: translateX(-0.02em);
+}
+
+.manifest {
+  @include heading-brutal;
+  font-size: clamp(1.25rem, 4.5vw, 2.5rem);
+  line-height: 1.1;
+  max-width: 60rem;
+  margin-bottom: 1rem;
+}

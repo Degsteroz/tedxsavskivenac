@@ -1,0 +1,9 @@
+.section {
+  &.variantDefault {
+    @include section-spacing;
+  }
+
+  &.variantCompact {
+    @include section-spacing-compact;
+  }
+}
