@@ -2,6 +2,7 @@ import { HERO_CONTENT } from '@/constants/content'
 import {
   CONTACT_EMAIL,
   INSTAGRAM_URL,
+  LINKEDIN_URL,
   TICKETS_URL,
 } from '@/constants/links'
 
@@ -62,7 +63,7 @@ export const EVENT_SCHEMA = {
     '@type': 'Organization',
     name: 'IT Connect Belgrade',
     email: CONTACT_EMAIL,
-    sameAs: [INSTAGRAM_URL],
+    sameAs: [INSTAGRAM_URL, LINKEDIN_URL],
   },
   performer: {
     '@type': 'Organization',
@@ -92,7 +93,7 @@ export const WEBSITE_SCHEMA = {
       '@type': 'ImageObject',
       url: `${SITE_URL}/favicon.svg`,
     },
-    sameAs: [INSTAGRAM_URL],
+    sameAs: [INSTAGRAM_URL, LINKEDIN_URL],
   },
 } as const
 
@@ -102,7 +103,7 @@ export const ORGANIZATION_SCHEMA = {
   name: SITE_NAME,
   url: SITE_URL,
   email: CONTACT_EMAIL,
-  sameAs: [INSTAGRAM_URL],
+  sameAs: [INSTAGRAM_URL, LINKEDIN_URL],
   logo: `${SITE_URL}/favicon.svg`,
 } as const
 

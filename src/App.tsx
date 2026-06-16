@@ -5,6 +5,7 @@ import { Header } from '@/components/sections/Header/Header'
 import { Hero } from '@/components/sections/Hero/Hero'
 import { Numbers } from '@/components/sections/Numbers/Numbers'
 import { Partnership } from '@/components/sections/Partnership/Partnership'
+import { Team } from '@/components/sections/Team/Team'
 import { Seo } from '@/components/Seo/Seo'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Team />
         <Audience />
         <Numbers />
         <Partnership />

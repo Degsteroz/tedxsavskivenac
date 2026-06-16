@@ -59,6 +59,12 @@ export const PARTNERSHIP_CONTENT = {
   cta: 'Become a Partner',
 } as const
 
+export const TEAM_CONTENT = {
+  title: 'THE TEAM',
+  intro:
+    'TEDxSavskiVenac is brought to life by IT Connect Belgrade — a crew of builders, designers, and community people who care about ideas and the city they happen in.',
+} as const
+
 export const FOOTER_CONTENT = {
   disclaimer:
     'This TEDx event is operated under license from TED. © 2026 TEDxSavskiVenac. All rights reserved.',
