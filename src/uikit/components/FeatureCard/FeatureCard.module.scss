@@ -1,0 +1,36 @@
+.card {
+  background: rgba($color-text, 0.03);
+  border-top: 2px solid $color-ted-red;
+  padding: 2rem 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba($color-text, 0.06);
+  }
+}
+
+.icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.body {
+  min-width: 0;
+}
+
+.title {
+  @include heading-brutal;
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  color: $color-muted;
+  font-size: clamp(0.8125rem, 2.5vw, 0.9375rem);
+  line-height: 1.6;
+  margin: 0;
+}

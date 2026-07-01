@@ -1,4 +1,6 @@
 export const TICKETS_URL = 'https://itconnect.tic.rs/ru/t79ylzzw'
+export const SPONSORS_PATH = '/sponsors'
+export const STARTIT_LINKEDIN_URL = 'https://www.linkedin.com/company/startitrs'
 export const INSTAGRAM_URL = 'https://instagram.com/tedxsavskivenac'
 export const INSTAGRAM_HANDLE = '@tedxsavskivenac'
 export const LINKEDIN_URL = 'https://www.linkedin.com/company/tedxsavskivenac/'

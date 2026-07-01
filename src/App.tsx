@@ -1,28 +1,14 @@
-import { About } from '@/components/sections/About/About'
-import { Audience } from '@/components/sections/Audience/Audience'
-import { Footer } from '@/components/sections/Footer/Footer'
-import { Header } from '@/components/sections/Header/Header'
-import { Hero } from '@/components/sections/Hero/Hero'
-import { Numbers } from '@/components/sections/Numbers/Numbers'
-import { Partnership } from '@/components/sections/Partnership/Partnership'
-import { Team } from '@/components/sections/Team/Team'
-import { Seo } from '@/components/Seo/Seo'
+import { Route, Routes } from 'react-router-dom'
+import { HomePage } from '@/pages/HomePage'
+import { SponsorsPage } from '@/pages/SponsorsPage/SponsorsPage'
+import { SPONSORS_PATH } from '@/constants/links'
 
 function App() {
   return (
-    <div className="app-shell">
-      <Seo />
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Team />
-        <Audience />
-        <Numbers />
-        <Partnership />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path={SPONSORS_PATH} element={<SponsorsPage />} />
+    </Routes>
   )
 }
 

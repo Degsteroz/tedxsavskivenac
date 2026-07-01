@@ -1,0 +1,50 @@
+.budget {
+  border-top: 1px solid rgba($color-text, 0.08);
+}
+
+.title {
+  text-align: center;
+}
+
+.intro {
+  max-width: 48rem;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.table {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba($color-text, 0.08);
+}
+
+.label {
+  font-size: 0.9375rem;
+}
+
+.amount {
+  color: $color-muted;
+  font-size: 0.9375rem;
+  flex-shrink: 0;
+}
+
+.total {
+  border-bottom: none;
+  border-top: 2px solid $color-ted-red;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  font-weight: 900;
+  font-size: 1.125rem;
+}
+
+.totalAmount {
+  color: $color-ted-red;
+}

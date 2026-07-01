@@ -1,0 +1,14 @@
+.numbers {
+  border-top: 1px solid rgba($color-text, 0.08);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @include from-md {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

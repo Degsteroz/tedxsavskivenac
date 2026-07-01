@@ -1,0 +1,18 @@
+.cta {
+  border-top: 1px solid rgba($color-text, 0.08);
+  text-align: center;
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+.title {
+  @include heading-brutal;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.text {
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  color: $color-muted;
+}

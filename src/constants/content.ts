@@ -54,9 +54,10 @@ export const NUMBERS_CONTENT = {
 } as const
 
 export const PARTNERSHIP_CONTENT = {
+  eyebrow: 'For brands & companies',
   title: 'PARTNERSHIP',
-  text: "If your company or brand wants to be associated with ideas, innovation and a community of professionals, we'd love to talk. We're open to partnerships that make sense for both sides.",
-  cta: 'Become a Partner',
+  text: "If your company or brand wants to be associated with ideas, innovation and a community of professionals, we'd love to talk. Explore our sponsorship packages and find the right fit.",
+  cta: 'View Sponsorship Packages',
 } as const
 
 export const TEAM_CONTENT = {

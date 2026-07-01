@@ -1,0 +1,23 @@
+.tiers {
+  border-top: 1px solid rgba($color-text, 0.08);
+}
+
+.title {
+  color: $color-ted-red;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @include from-md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @include from-lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

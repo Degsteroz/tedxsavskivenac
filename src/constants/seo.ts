@@ -108,3 +108,19 @@ export const ORGANIZATION_SCHEMA = {
 } as const
 
 export const STRUCTURED_DATA = [EVENT_SCHEMA, WEBSITE_SCHEMA, ORGANIZATION_SCHEMA] as const
+
+export const SPONSORS_SEO = {
+  title: 'Partnership Proposal — TEDxSavskiVenac 2026',
+  description:
+    'Become a partner of TEDxSavskiVenac 2026. Sponsorship packages from €200, in-kind partnerships, and exclusive access to 100 decision-makers in Belgrade.',
+  keywords: [
+    'TEDxSavskiVenac sponsorship',
+    'TEDx partner',
+    'Belgrade event sponsorship',
+    'TEDx sponsorship packages',
+    'IT Connect Belgrade',
+  ].join(', '),
+  ogImage: SEO.ogImage,
+} as const
+
+export const SPONSORS_URL = `${SITE_URL}/sponsors`

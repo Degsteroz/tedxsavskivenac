@@ -1,0 +1,21 @@
+.about {
+  border-top: 1px solid rgba($color-text, 0.08);
+}
+
+.title {
+  color: $color-ted-red;
+  text-align: center;
+}
+
+.text {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.note {
+  max-width: 48rem;
+  margin: 1rem auto 0;
+  text-align: center;
+  color: $color-muted;
+}

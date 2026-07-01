@@ -1,15 +1,20 @@
 import { Button, Container, HeaderNav, Logo } from '@/uikit'
+import type { NavItem } from '@/uikit'
 import { TICKETS_URL } from '@/constants/links'
 import { NAV_ITEMS } from '@/constants/navigation'
 import styles from './Header.module.scss'
 
-export function Header() {
+type HeaderProps = {
+  navItems?: NavItem[]
+}
+
+export function Header({ navItems = [...NAV_ITEMS] }: HeaderProps) {
   return (
     <header className={styles.header}>
       <Container className={styles.inner}>
         <Logo />
         <div className={styles.actions}>
-          <HeaderNav items={[...NAV_ITEMS]} />
+          <HeaderNav items={navItems} />
           <Button
             as="a"
             href={TICKETS_URL}

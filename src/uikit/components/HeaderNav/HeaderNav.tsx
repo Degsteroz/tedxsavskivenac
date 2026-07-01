@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { NavLink } from '@/uikit'
 import styles from './HeaderNav.module.scss'
 
@@ -10,6 +11,10 @@ export type NavItem = {
 
 type HeaderNavProps = {
   items: NavItem[]
+}
+
+function isRouterLink(href: string) {
+  return href.startsWith('/') && !href.includes('#')
 }
 
 export function HeaderNav({ items }: HeaderNavProps) {
@@ -36,9 +41,15 @@ export function HeaderNav({ items }: HeaderNavProps) {
       >
         {items.map((item) => (
           <li key={item.href}>
-            <NavLink href={item.href} onClick={closeMenu}>
-              {item.label}
-            </NavLink>
+            {isRouterLink(item.href) ? (
+              <Link to={item.href} className={styles.link} onClick={closeMenu}>
+                {item.label}
+              </Link>
+            ) : (
+              <NavLink href={item.href} onClick={closeMenu}>
+                {item.label}
+              </NavLink>
+            )}
           </li>
         ))}
       </ul>

@@ -54,3 +54,34 @@
     gap: 2rem;
   }
 }
+
+.link {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-text;
+  position: relative;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: $color-ted-red;
+    transition: width $transition-fast;
+  }
+
+  &:hover {
+    color: $color-ted-red;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}

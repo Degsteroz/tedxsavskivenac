@@ -1,7 +1,13 @@
 import { useEffect } from 'react'
-import { SEO, SITE_URL, STRUCTURED_DATA } from '@/constants/seo'
+import { SEO, SITE_URL, SPONSORS_SEO, SPONSORS_URL, STRUCTURED_DATA } from '@/constants/seo'
 
 const STRUCTURED_DATA_ID = 'tedx-structured-data'
+
+type SeoPage = 'home' | 'sponsors'
+
+type SeoProps = {
+  page?: SeoPage
+}
 
 function upsertMeta(attribute: 'name' | 'property', key: string, content: string) {
   const selector = `meta[${attribute}="${key}"]`
@@ -29,31 +35,35 @@ function upsertLink(rel: string, href: string) {
   element.setAttribute('href', href)
 }
 
-export function Seo() {
+export function Seo({ page = 'home' }: SeoProps) {
   useEffect(() => {
-    document.title = SEO.title
+    const isSponsors = page === 'sponsors'
+    const meta = isSponsors ? SPONSORS_SEO : SEO
+    const pageUrl = isSponsors ? SPONSORS_URL : SITE_URL
+
+    document.title = meta.title
     document.documentElement.lang = 'en'
 
-    upsertMeta('name', 'description', SEO.description)
-    upsertMeta('name', 'keywords', SEO.keywords)
+    upsertMeta('name', 'description', meta.description)
+    upsertMeta('name', 'keywords', meta.keywords)
     upsertMeta('name', 'author', SEO.author)
     upsertMeta('name', 'robots', 'index, follow')
     upsertMeta('name', 'theme-color', SEO.themeColor)
 
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:site_name', SEO.author)
-    upsertMeta('property', 'og:title', SEO.title)
-    upsertMeta('property', 'og:description', SEO.description)
-    upsertMeta('property', 'og:url', SITE_URL)
-    upsertMeta('property', 'og:image', SEO.ogImage)
+    upsertMeta('property', 'og:title', meta.title)
+    upsertMeta('property', 'og:description', meta.description)
+    upsertMeta('property', 'og:url', pageUrl)
+    upsertMeta('property', 'og:image', meta.ogImage)
     upsertMeta('property', 'og:locale', 'en_US')
 
     upsertMeta('name', 'twitter:card', 'summary_large_image')
-    upsertMeta('name', 'twitter:title', SEO.title)
-    upsertMeta('name', 'twitter:description', SEO.description)
-    upsertMeta('name', 'twitter:image', SEO.ogImage)
+    upsertMeta('name', 'twitter:title', meta.title)
+    upsertMeta('name', 'twitter:description', meta.description)
+    upsertMeta('name', 'twitter:image', meta.ogImage)
 
-    upsertLink('canonical', SITE_URL)
+    upsertLink('canonical', pageUrl)
 
     let script = document.getElementById(STRUCTURED_DATA_ID)
 
@@ -65,7 +75,7 @@ export function Seo() {
     }
 
     script.textContent = JSON.stringify(STRUCTURED_DATA)
-  }, [])
+  }, [page])
 
   return null
 }

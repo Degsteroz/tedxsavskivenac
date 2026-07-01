@@ -1,0 +1,31 @@
+.venue {
+  border-top: 1px solid rgba($color-text, 0.08);
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.text {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-family: $font-family-heading;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-text;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-ted-red;
+  }
+}
