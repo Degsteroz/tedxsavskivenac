@@ -65,7 +65,7 @@ export const SPONSORS_TIERS = {
     {
       badge: '🔴',
       name: 'Presenting Partner',
-      price: '€2,500',
+      price: '€5,000',
       availability: '1 available',
       features: [
         'Logo on website (top position)',
@@ -83,7 +83,7 @@ export const SPONSORS_TIERS = {
     {
       badge: '🟡',
       name: 'Gold Partner',
-      price: '€1,000',
+      price: '€2,000',
       availability: 'Up to 3 available',
       features: [
         'Logo on website (gold section)',
@@ -99,7 +99,7 @@ export const SPONSORS_TIERS = {
     {
       badge: '🔵',
       name: 'Silver Partner',
-      price: '€500',
+      price: '€1,000',
       availability: 'Up to 5 available',
       features: [
         'Logo on website',
@@ -112,7 +112,7 @@ export const SPONSORS_TIERS = {
     {
       badge: '🟢',
       name: 'Bronze Partner',
-      price: '€200',
+      price: '€500',
       availability: 'Unlimited',
       features: [
         'Logo on website',

@@ -5,6 +5,7 @@
 
 .title {
   text-align: center;
+  color: $color-ted-red;
 }
 
 .text {
@@ -28,4 +29,9 @@
   &:hover {
     color: $color-ted-red;
   }
+}
+
+.image {
+  margin: 20px auto;
+  filter: invert(100%);
 }
